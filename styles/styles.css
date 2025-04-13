@@ -1,0 +1,15 @@
+/*Joey Teahan - insecure version - 20520316 
+- styles.css*/
+body {
+    font-family: Arial;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  input, button {
+    padding: 8px;
+    margin: 5px 0;
+  }
+  

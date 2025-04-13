@@ -1,0 +1,24 @@
+<!--Joey Teahan - insecure version - 20520316 
+- list.js-->
+
+<h2>Your Shopping List</h2>
+
+<!--Start of form-->
+<form method="POST">
+  Add item: <input name="item">
+  <!--add button-->
+  <button type="submit">Add</button>
+</form>
+
+<ul>
+  <% items.forEach(item => { %>
+    <li>
+      <%- item.name %> 
+      <form action="/delete/<%= item.id %>?userId=<%= userId %>" method="POST" style="display:inline;">
+        <button type="submit">🗑️ Delete</button>
+      </form>
+    </li>
+  <% }) %>
+</ul>
+
+<link rel="stylesheet" href="/styles.css">
